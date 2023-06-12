@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <title>Document</title>
+    <style>
+        
+.mySlides {display: none}
+img {vertical-align: center;}
+
+/* Slideshow container */
+.slideshow-container {
+    float:center;
+    
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  
+    position: absolute;
+    top: 50%;
+    margin-top: 10px;
+    width: auto;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.9s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/6 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 120px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.9s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name:fade;
+  animation-duration: 5s;
+
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 80px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.audio{
+ margin-left: 520px;
+ margin-top: -1290px;
+ background-size: cover;
+ width: 10px;
+}
+.text p{
+  margin-top:70px;
+  text-align: left;
+  font-family: 'Times New Roman';
+  font-size: 14px;
+
+
+}
+.card {
+  position: absolute;
+  border-radius: 10px;
+  height: 650px;
+  width: 455px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 80px 5px black;
+  overflow: hidden;
+  padding:10px;
+}
+#star5 {
+  margin: 100px 10px;
+  position: relative;
+  display: block;
+  color: rgb(141, 138, 138);
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid rgb(141, 138, 138);
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+#star5:before {
+  border-bottom: 80px solid rgb(141, 138, 138);
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+#star5:after {
+  position: absolute;
+  display: block;
+  color: rgb(141, 138, 138);
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid rgb(141, 138, 138);
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+.star5 {
+  margin: 420px 1130px;
+  position: relative;
+  display: block;
+  color: rgb(141, 138, 138);
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid rgb(141, 138, 138);
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+.star5:before {
+  border-bottom: 80px solid rgb(141, 138, 138);
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+.star5:after {
+  position: absolute;
+  display: block;
+  color: rgb(141, 138, 138);
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid rgb(141, 138, 138);
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="background">
+    </div>
+    <div id="curve" class="card">
+        <div class="slideshow-container">
+          
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="img/16.jpg" alt="poza" width="98%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="img/23.jpg" alt="poza" width="99%"  >
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                   <img src="img/3.png" alt="poza" width="99%" >
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                   <img src="img/2.png" alt="poza" width="99%" >
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                   <img src="img/26.jpg" alt="poza" width="99%" >
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img/5.jpg" alt="poza" width="99%" >
+                </div>
+
+            </div>
+            <div style="text-align:left">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 4000); // Change image every 2 seconds
+                }
+            </script>
+      <div class="footer">
+        
+        <div class="connections">
+          <div class="connection facebook">
+            <div class="icon">
+                   <i class="fa-brands fa-facebook"></i>
+
+            </div>
+        </div>
+          <div class="connection instagram">
+            <div class="icon">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+         
+        </div>
+        <svg id="curve">
+          <path
+            id="p"
+            d="M0,200 Q80,100 400,200 V150 H0 V50"
+            transform="translate(0 300)"
+          />
+          
+        </svg>
+        <div class="info">
+
+         
+          <div class="text">
+            <p>
+             Fotografia - este un hobby creativ care te ajuta sa
+              vezi si sa apreciezi frumusetea din jur la adevarata ei
+              valoare.Fotografia imortalizeaza un moment, transmite emotii si ma
+              ajuta sa-mi exprim gandurile .
+            </p>
+          </div>
+          
+        </div>
+      </div>
+     
+      </div>
+    </div>
+      <div id="star5"></div>
+      <div class="star5"></div>
+      <div class="info">
+          <div class="name"><div class="audio">
+             <audio controls>
+               <source src="audio/florin-chilian-zece-(mp3convert.org).mp3" ="audio/mpeg">
+            </audio>
+          </div>
+         
+  </body>
+</html>
